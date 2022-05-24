@@ -1,0 +1,19 @@
+{
+  "name": "email_service_qa",
+  "script": "dist/main.js",
+  "watch": ["dist/"],
+  "ignore_watch": ["src/", "package.json"],
+  "instances": 1,
+  "error_file": "logs/qa.error.log",
+  "out_file": "logs/qa.out.log",
+  "env": {
+    "PORT": "5300",
+    "BASIC_AUTH_USERNAME": "sbc",
+    "BASIC_AUTH_PASSWORD": "F0nch3rt0",
+    "SCHEMA_VERSION": "v1",
+    "APP_ENVIRONMENT": "qa",
+    "DEFAULT_EMAIL_TO": "hanna@dnamicro.com",
+    "DEFAULT_EMAIL_FROM": "noreply@dnamicro.com",
+    "SENDGRID_API_KEY": "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"
+  }
+}

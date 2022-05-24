@@ -1,0 +1,28 @@
+{
+  "name": "email_service_dev",
+  "script": "dist/main.js",
+  "watch": ["dist/"],
+  "ignore_watch": ["src/", "package.json"],
+  "instances": 1,
+  "error_file": "logs/dev.error.log",
+  "out_file": "logs/dev.out.log",
+  "env": {
+    "PORT": "3005",
+    "BASIC_AUTH_USERNAME": "sbc",
+    "BASIC_AUTH_PASSWORD": "F0nch3rt0",
+    "REDIS_HTTP_HOST": "https://store-rdb-api.dnamicro.net",
+    "PROTOCOL_TYPE": "HTTP",
+    "SCHEMA_VERSION": "v4",
+    "APP_ENVIRONMENT": "dev",
+    "DEFAULT_EMAIL_TO": "hanna@dnamicro.com",
+    "DEFAULT_EMAIL_FROM": "noreply@dnamicro.com",
+    "SENDGRID_API_KEY": "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",
+    "ENABLE_EMAIL_CHECKER": "true",
+    "DATABASE": "gorentals",
+    "SEARCH_ENDPOINT": "https://search-api.dnamicro.net",
+    "OUTBOX_ENTITY_NAME": "email_outbox",
+    "ELASTIC_USERNAME": "admin",
+    "ELASTIC_PASSWORD": "admin",
+    "EMAIL_CHECKING_INTERVAL": "8000"
+  }
+}
